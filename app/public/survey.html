@@ -9,18 +9,49 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
 </head>
+
+<style>
+    .form-control {
+      margin-left: 20px;
+    }
+
+    img {
+        height: fit-content;
+    }
+
+
+
+
+
+</style>
 
 <body>
     <div class="container">
         <div class="col s12 m10">
-            <h2 class="header">Take The Survey!</h2>
+            <h2 class="header center">Take The Survey!</h2>
+            <h5 class="header center">1 = Strongly Disagree | 5 = Strongly Agree</h5>
             <div class="card horizontal">
                 <div class="card-image">
                     <img src="./../assets/luchamasks.png">
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
+                            <div class="form-group">
+                                    <label for="name">Name (required)</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                  </div>
+            
+                                  <div class="form-group">
+                                    <label for="photo">Link to Photo (required)</label>
+                                    <input type="text" class="form-control" id="photo" required>
+                                  </div>
+                                </form>
+                            </div>
+
+                            <div class="form-control">
                         <form action="#">
                             <p>
                                 <h6>You value money very highly.</h6>
@@ -49,75 +80,267 @@
                                     <span>5</span>
                                 </label>
                             </p>
-<br>
+                            <br>
                             <p>
-                                    <h6>You love to make people laugh.</h6>
+                                <h6>You love to make people laugh.</h6>
+                                <label>
+                                    <input name="q2" type="radio" id="Radio1" value="1" />
+                                    <span>1</span>
+                                </label>
+
+                                <label>
+                                    <input name="q2" type="radio" id="Radio2" value="2" />
+                                    <span>2</span>
+                                </label>
+
+                                <label>
+                                    <input name="q2" type="radio" id="Radio3" value="3" />
+                                    <span>3</span>
+                                </label>
+
+                                <label>
+                                    <input name="q2" type="radio" id="Radio4" value="4" />
+                                    <span>4</span>
+                                </label>
+
+                                <label>
+                                    <input name="q2" type="radio" id="Radio5" value="5" />
+                                    <span>5</span>
+                                </label>
+                            </p>
+
+                            <br>
+
+                            <p>
+                                <h6>You think violence is always the answer.</h6>
+                                <label>
+                                    <input name="q3" type="radio" id="Radio1" value="1" />
+                                    <span>1</span>
+                                </label>
+
+                                <label>
+                                    <input name="q3" type="radio" id="Radio2" value="2" />
+                                    <span>2</span>
+                                </label>
+
+                                <label>
+                                    <input name="q3" type="radio" id="Radio3" value="3" />
+                                    <span>3</span>
+                                </label>
+
+                                <label>
+                                    <input name="q3" type="radio" id="Radio4" value="4" />
+                                    <span>4</span>
+                                </label>
+
+                                <label>
+                                    <input name="q3" type="radio" id="Radio5" value="5" />
+                                    <span>5</span>
+                                </label>
+                            </p>
+
+                            <br>
+
+                            <p>
+                                <h6>Your appearance is very important to you.</h6>
+                                <label>
+                                    <input name="q4" type="radio" id="Radio1" value="1" />
+                                    <span>1</span>
+                                </label>
+
+                                <label>
+                                    <input name="q4" type="radio" id="Radio2" value="2" />
+                                    <span>2</span>
+                                </label>
+
+                                <label>
+                                    <input name="q4" type="radio" id="Radio3" value="3" />
+                                    <span>3</span>
+                                </label>
+
+                                <label>
+                                    <input name="q4" type="radio" id="Radio4" value="4" />
+                                    <span>4</span>
+                                </label>
+
+                                <label>
+                                    <input name="q4" type="radio" id="Radio5" value="5" />
+                                    <span>5</span>
+                                </label>
+                            </p>
+
+                            <br>
+
+                            <p>
+                                <h6>You like cats more than people.</h6>
+                                <label>
+                                    <input name="q6" type="radio" id="Radio1" value="1" />
+                                    <span>1</span>
+                                </label>
+
+                                <label>
+                                    <input name="q6" type="radio" id="Radio2" value="2" />
+                                    <span>2</span>
+                                </label>
+
+                                <label>
+                                    <input name="q6" type="radio" id="Radio3" value="3" />
+                                    <span>3</span>
+                                </label>
+
+                                <label>
+                                    <input name="q6" type="radio" id="Radio4" value="4" />
+                                    <span>4</span>
+                                </label>
+
+                                <label>
+                                    <input name="q6" type="radio" id="Radio5" value="5" />
+                                    <span>5</span>
+                                </label>
+                            </p>
+
+                            <br>
+
+                            <p>
+                                <h6>You consider yourself a great dancer.</h6>
+                                <label>
+                                    <input name="q7" type="radio" id="Radio1" value="1" />
+                                    <span>1</span>
+                                </label>
+
+                                <label>
+                                    <input name="q7" type="radio" id="Radio2" value="2" />
+                                    <span>2</span>
+                                </label>
+
+                                <label>
+                                    <input name="q7" type="radio" id="Radio3" value="3" />
+                                    <span>3</span>
+                                </label>
+
+                                <label>
+                                    <input name="q7" type="radio" id="Radio4" value="4" />
+                                    <span>4</span>
+                                </label>
+
+                                <label>
+                                    <input name="q7" type="radio" id="Radio5" value="5" />
+                                    <span>5</span>
+                                </label>
+                            </p>
+
+                            <br>
+                        
+                            <p>
+                                <h6>You think of yourself as a team player.</h6>
+                                <label>
+                                    <input name="q8" type="radio" id="Radio1" value="1" />
+                                    <span>1</span>
+                                </label>
+
+                                <label>
+                                    <input name="q8" type="radio" id="Radio2" value="2" />
+                                    <span>2</span>
+                                </label>
+
+                                <label>
+                                    <input name="q8" type="radio" id="Radio3" value="3" />
+                                    <span>3</span>
+                                </label>
+
+                                <label>
+                                    <input name="q8" type="radio" id="Radio4" value="4" />
+                                    <span>4</span>
+                                </label>
+
+                                <label>
+                                    <input name="q8" type="radio" id="Radio5" value="5" />
+                                    <span>5</span>
+                                </label>
+                            </p>
+
+                            <br>
+
+                            <p>
+                                    <h6>Loyalty is very important to you.</h6>
                                     <label>
-                                        <input name="q2" type="radio" id="Radio1" value="1" />
+                                        <input name="q9" type="radio" id="Radio1" value="1" />
                                         <span>1</span>
                                     </label>
     
                                     <label>
-                                        <input name="q2" type="radio" id="Radio2" value="2" />
+                                        <input name="q9" type="radio" id="Radio2" value="2" />
                                         <span>2</span>
                                     </label>
     
                                     <label>
-                                        <input name="q2" type="radio" id="Radio3" value="3" />
+                                        <input name="q9" type="radio" id="Radio3" value="3" />
                                         <span>3</span>
                                     </label>
     
                                     <label>
-                                        <input name="q2" type="radio" id="Radio4" value="4" />
+                                        <input name="q9" type="radio" id="Radio4" value="4" />
                                         <span>4</span>
                                     </label>
     
                                     <label>
-                                        <input name="q2" type="radio" id="Radio5" value="5" />
+                                        <input name="q9" type="radio" id="Radio5" value="5" />
                                         <span>5</span>
                                     </label>
                                 </p>
 
                                 <br>
 
-                                <p>
-                                        <h6>You think violence is always the answer.</h6>
-                                        <label>
-                                            <input name="q3" type="radio" id="Radio1" value="1" />
-                                            <span>1</span>
-                                        </label>
-        
-                                        <label>
-                                            <input name="q3" type="radio" id="Radio2" value="2" />
-                                            <span>2</span>
-                                        </label>
-        
-                                        <label>
-                                            <input name="q3" type="radio" id="Radio3" value="3" />
-                                            <span>3</span>
-                                        </label>
-        
-                                        <label>
-                                            <input name="q3" type="radio" id="Radio4" value="4" />
-                                            <span>4</span>
-                                        </label>
-        
-                                        <label>
-                                            <input name="q3" type="radio" id="Radio5" value="5" />
-                                            <span>5</span>
-                                        </label>
-                                    </p>
+                                
+                                    <h6>You have a very particular diet.</h6>
+                                    <label>
+                                        <input name="q10" type="radio" id="Radio1" value="1" />
+                                        <span>1</span>
+                                    </label>
+    
+                                    <label>
+                                        <input name="q10" type="radio" id="Radio2" value="2" />
+                                        <span>2</span>
+                                    </label>
+    
+                                    <label>
+                                        <input name="q10" type="radio" id="Radio3" value="3" />
+                                        <span>3</span>
+                                    </label>
+    
+                                    <label>
+                                        <input name="q10" type="radio" id="Radio4" value="4" />
+                                        <span>4</span>
+                                    </label>
+    
+                                    <label>
+                                        <input name="q10" type="radio" id="Radio5" value="5" />
+                                        <span>5</span>
+                                    </label>
+
+                                    <br>
+                                    <br>
+    
+                                    <button class="btn modal-trigger" id="submit" name="action" data-target="modal1">Submit
+                                          </button>
 
 
                         </form>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <h4>Modal Header</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div>
+              </div>
     </div>
 
 
@@ -125,3 +348,53 @@
 </body>
 
 </html>
+
+
+
+<script type="text/javascript">
+    var allAnswers = [];
+    $(".submit").on("click", function(event){
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            answers: function(){
+                for (i=1; i < 11; i++){
+                    var answer = $('input[name="q'+i+'"]:checked').val();
+                    allAnswers.push(parseInt(answer));
+                }
+                return allAnswers;
+            }
+        };
+        console.log(newFriend);
+        $.post("/api/friends", newFriend, function(data){
+            if (data) {
+                alert("Find Your Tag Team Partner!");
+            }
+            else {
+                alert("OH NO! Something went wrong!");
+            }
+            
+            $("#name").val("");
+            $("#photo").val("");
+            $('input[type="radio"]').attr('checked', false);
+        }).done(function() {
+            
+            $.ajax({
+                    url: "/api/friends",
+                    method: "GET",
+                    datatype: 'json'
+            }).done(function(res, err) {
+                if(err) {
+                    console.log(err);
+                }
+                
+                var current = res[res.length-1];
+            
+                var bestFriend = current.bestie;
+                console.log(bestFriend);
+                $("#friend-name").text("Hi " + current.name + ", my name is " + bestFriend.name + "!");
+                $("img#friend-photo").attr("src", bestFriend.photo);
+            });
+        }); 
+    }); 
+</script>
