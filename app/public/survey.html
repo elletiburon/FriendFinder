@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+
+
     <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
@@ -31,6 +33,32 @@
       color: aquamarine;
   }
 
+  .modal-header {
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h4.modal-title {
+  font-family: 'Lora', serif;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+}
+
+button.close {
+  color: white;
+}
+
+.modal-body {
+	text-align: center;
+}
+
+img#friend-photo {
+	max-width: 60%;
+	max-height:none;
+}
+
 
 
 </style>
@@ -42,7 +70,7 @@
             <h5 class="header center">1 = Strongly Disagree | 5 = Strongly Agree</h5>
             <div class="card horizontal">
                 <div class="card-image">
-                    <img src="./../assets/luchamasks.png">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Lucha_Masks.jpg">
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
@@ -358,7 +386,7 @@
                                     <br>
                                     <br>
     
-                                    <button class="btn modal-trigger" id="submit" name="action" data-target="modal1">Submit
+                                    <button class="btn modal-trigger" id="submit" name="action" data-target="#myModal">Submit
                                           </button>
 
 
@@ -369,16 +397,25 @@
             </div>
         </div>
 
-        <div id="modal1" class="modal">
-                <div class="modal-content">
-                  <h4>Modal Header</h4>
-                  <p>A bunch of text</p>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="bestFriend">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="bestFriend">You've made a friend!</h4>
+                </div>
+                <div class="modal-body" id="friend-info">
+                          <h5 id="friend-name"></h5>
+                          <img id="friend-photo" src="" alt="Meet your new friend!">
                 </div>
                 <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
               </div>
-    </div>
+            </div>
+          </div>
+
+     
 
 
 
@@ -389,8 +426,12 @@
 
 
 <script type="text/javascript">
+  $(document).ready(function(){
+    $('#myModal').modal();
+  });
+
     var allAnswers = [];
-    $(".submit").on("click", function(event){
+    $("#submit").on("click", function(event){
         var newFriend = {
             name: $("#name").val().trim(),
             photo: $("#photo").val().trim(),
