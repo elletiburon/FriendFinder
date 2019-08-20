@@ -1,0 +1,27 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "A full-stack web application using node.js, Express, and MySQL. Find a wrasslin tag partner.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elletiburon/FriendFinder"
+  },
+  "keywords": [
+    "friends",
+    "friend-finder",
+    "friendFinder",
+    "dating",
+    "match"
+  ],
+  "author": "elletiburon",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4"
+  }
+}
